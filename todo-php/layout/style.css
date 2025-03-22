@@ -1,0 +1,32 @@
+        html,
+        body {
+            height: 100%;
+            font-family: 'Vazir';
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: rgb(44, 44, 44);
+            font-family: 'Vazir';
+        }
+
+        .content {
+            flex: 1;
+            font-family: 'Vazir';
+        }
+
+
+        table {
+            font-size: 20px;
+            border-radius: 10px;
+        }
+
+        head{
+            font-family: 'Vazir';
+        }
+
+        #txtHeader{
+            cursor:pointer;
+        }
