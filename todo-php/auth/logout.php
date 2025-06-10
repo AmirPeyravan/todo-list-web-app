@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$result = $_SESSION['useraccount'];
+
 
 function logOut(string $username)
 {
