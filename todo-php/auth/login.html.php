@@ -87,7 +87,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $pdo = new PDO('mysql:dbname=if0_38474048_todo_db;host=sql108.infinityfree.com', 'if0_38474048', 'iK4oIFnxM3C8');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        
+                $statement = $pdo->prepare("SELECT * FROM userslist WHERE username = :username");
+        $statement->bindParam(':username', $username, type: PDO::PARAM_STR);
+        $statement->execute();
+        $user = $statement->fetch(PDO::FETCH_ASSOC);
 
         if ($user) {
 
