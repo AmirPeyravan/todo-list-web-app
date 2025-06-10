@@ -14,5 +14,5 @@ function logOut(string $username)
         }
     }
 }
-logOut($result);
+
 ?>
